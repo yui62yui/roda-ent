@@ -1,9 +1,9 @@
 import Layout from "common/layout/Layout";
-import About from "common/pages/about/About";
-import Artist from "common/pages/artist/Artist";
-import Audition from "common/pages/audition/Audition";
-import Home from "common/pages/home/Home";
-import Notice from "common/pages/notice/Notice";
+import About from "pages/about/About";
+import Artist from "pages/artist/Artist";
+import Audition from "pages/audition/Audition";
+import Home from "pages/home/Home";
+import Notice from "pages/notice/Notice";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import styled, { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
