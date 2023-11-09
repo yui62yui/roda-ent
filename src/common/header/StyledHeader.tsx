@@ -48,25 +48,42 @@ export const RightWrapper = styled.div`
       font-size: 1.6rem;
     }
   }
-
   & > a:hover {
     color: #999;
-    transform: scale(105%);
   }
+
+  & > a::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: -10%;
+    right: 0;
+    transform: scale(0%);
+    width: 120%;
+    height: 2px;
+    background-color: #222;
+    transition: all 0.3s ease;
+  }
+
+  & > a:hover::after {
+    transform: scale(100%);
+    background-color: #999;
+  }
+
   & > a.activated::after {
     content: "";
     position: absolute;
     bottom: -8px;
-    left: 0;
+    left: -10%;
     right: 0;
-    transform: translate(-9%);
+    transform: scale(100%);
     width: 120%;
     height: 2px;
-    background-color: #666;
+    background-color: #222;
     transition: all 0.3s ease;
   }
 
-  & > a.activated:hover::after {
+  & > a.activated :hover::after {
     background-color: #999;
   }
 
