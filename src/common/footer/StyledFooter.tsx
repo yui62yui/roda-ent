@@ -43,7 +43,7 @@ export const IconContainer = styled.div`
     align-items: center;
     width: 6rem;
     height: 6rem;
-    background-color: #444;
+    background-color: #333;
     border-radius: 50%;
     cursor: pointer;
 
